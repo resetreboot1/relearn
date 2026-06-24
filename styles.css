@@ -1,17 +1,22 @@
 html {
     box-sizing: border-box;
     padding: 0px;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    align-items: stretch;
 }
 
 body {
     background-color: oklch(21% 0.034 264.665);
     display: flex;
     flex-direction: column;
+    margin: 0px;
     min-width: 100vw;
     min-height: 100vh;
     max-width: 100vw;
     max-height: 100vh;
-    overflow: hidden;
+    flex: auto;
 }
 
 *,
@@ -33,34 +38,43 @@ h1 {
     color: oklch(92.8% 0.006 264.531);
     width: auto;
     padding: calc(5px + 1vw);
-    margin: -8px -8px 4px -8px;
+    margin: 5px 0px;
 }
 
-.h1-extra {
+
+p.h1-extra {
     letter-spacing: normal;
-    margin-top: 4px;
+    margin: 0px;
     font-size: calc(15px + 0.5vw);
 }
 
 .recipe-list {
-    align-self: stretch;
+    margin: auto 0px;
+    align-self: center;
     display: flex;
-    flex: auto;
+    width: calc(150px + 15vw);
+    height: calc(150px + 15vw);
     flex-direction: column;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
+    max-width: 100vw;
+    border: 1px hsl(0, 0%, 55%) dotted;
 }
 
-.li {
+li {
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: auto;
+    align-self: stretch;
 }
 
 .recipe-button {
-    background-color: oklch(44.8% 0.119 151.328);
-    border-radius: 25px;
-    border:none;
+    flex: auto;
+    background-color: oklch(27.8% 0.033 256.848);
+    border: .5px hsl(0, 0%, 20%) solid;
     padding: 12px;
 }
