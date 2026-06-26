@@ -4,19 +4,16 @@ html {
     max-width: 100vw;
     max-height: 100vh;
     display: flex;
-    align-items: stretch;
 }
 
 body {
-    background-color: oklch(21% 0.034 264.665);
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    min-width: 100vw;
-    min-height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
     flex: auto;
+    width: clamp(100vw, 100vw, 100vw);
+    height: clamp(100vh, 100vh, 100vh);
+    margin: 0px;
+    background-color: oklch(21% 0.034 264.665);
 }
 
 *,
@@ -26,55 +23,57 @@ body {
 }
 
 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: oklch(92.8% 0.006 264.531);
-
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
-    letter-spacing: 1px;
-    font-size: calc(20px + 1.2vw);
-    text-align: center;
-    color: oklch(92.8% 0.006 264.531);
     width: auto;
     padding: calc(5px + 1vw);
     margin: 5px 0px;
+    font-size: calc(20px + 1.2vw);
+    text-align: center;
+    letter-spacing: 1px;
+    color: oklch(92.8% 0.006 264.531);
 }
 
 
 p.h1-extra {
-    letter-spacing: normal;
     margin: 0px;
     font-size: calc(15px + 0.5vw);
+    letter-spacing: normal;
 }
 
 .recipe-list {
-    margin: auto 0px;
-    align-self: center;
     display: flex;
+    flex-direction: column;
     width: calc(150px + 15vw);
     height: calc(150px + 15vw);
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    list-style-type: none;
     padding: 0;
-    max-width: 100vw;
     border: 1px hsl(0, 0%, 55%) dotted;
+    margin: auto;
+    list-style-type: none;
 }
 
 li {
-    padding: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex: auto;
-    align-self: stretch;
+    padding: 0px;
 }
 
 .recipe-button {
     flex: auto;
-    background-color: oklch(27.8% 0.033 256.848);
+    padding: 0px;
     border: .5px hsl(0, 0%, 20%) solid;
-    padding: 12px;
+    background-color: oklch(27.8% 0.033 256.848);
+}
+
+.recipe-button:hover {
+    border: 1.5px hsl(0, 16%, 88%) solid;
 }
