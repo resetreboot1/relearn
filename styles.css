@@ -74,6 +74,18 @@ li {
     background-color: oklch(27.8% 0.033 256.848);
 }
 
+
+h2 {
+    color: oklch(92.8% 0.006 264.531);
+}
+
+.description,
+.ingredients,
+.steps {
+    color: oklch(92.8% 0.006 264.531);
+}
+
+
 .recipe-button:hover {
     border: 1.5px hsl(0, 16%, 88%) solid;
 }
