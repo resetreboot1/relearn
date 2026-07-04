@@ -75,14 +75,19 @@ li {
 }
 
 
-h2 {
-    color: oklch(92.8% 0.006 264.531);
-}
-
+h2,
 .description,
 .ingredients,
 .steps {
     color: oklch(92.8% 0.006 264.531);
+    margin:2.5vh 1.5vw -1vh 1.5vw;
+    padding: 0px;
+    line-height: 1.5;
+    list-style-position: inside;
+}
+
+h2 {
+    margin-top: 4vh;
 }
 
 
