@@ -84,11 +84,15 @@ h2,
     padding: 0px;
     line-height: 1.5;
     list-style-position: inside;
-    max-width: 40vw;
+    max-width: 45vw;
 }
 
 .steps {
     padding-bottom: 3vh;
+}
+
+.steps li {
+    margin-bottom:10px ;
 }
 
 h2 {
@@ -102,18 +106,15 @@ h2 {
     position: fixed;
     bottom: 25px;
     right: 25px;   
-    display: flex;
     text-decoration: none;
     color: oklch(100% 0.184 86.047);
     width: 100px;
     height: 100px;
-    background-image: url(images/bubble.png);
-    background-size: contain;
-    
+    background: url(images/bubble.png) 0 0 / contain;   
 }
 
 .recipe-img {
-    width: 40vw;
+    width: 45vw;
     height: auto;
     margin: 15px 1.5vw 15px;
 }
