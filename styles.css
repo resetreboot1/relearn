@@ -87,12 +87,24 @@ h2,
     max-width: 45vw;
 }
 
+.description,
+.ingredients li,
+.steps li {
+    font-size: calc(12px + 0.5vw);
+}
+
+.description {
+    margin-bottom: 25px;
+    font-size: calc(12px + 0.5vw);
+}
+
 .steps {
     padding-bottom: 3vh;
 }
 
 .steps li {
     margin-bottom:10px ;
+
 }
 
 h2 {
@@ -102,7 +114,7 @@ h2 {
 .homepage-link {
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
-    opacity: 30%;
+    opacity: 10%;
     position: fixed;
     bottom: 25px;
     right: 25px;   
@@ -132,4 +144,20 @@ h1.recipe-title {
 
 .homepage-link:hover {
     opacity: 70%;
+}
+
+@media (max-width: 768px) {
+
+h2,
+.description,
+.ingredients,
+.steps,
+.recipe-img {
+    min-width: 90vw;
+    align-self: center;
+}
+
+h1.recipe-title {text-align: center;}
+
+body {padding: 0px;}
 }
