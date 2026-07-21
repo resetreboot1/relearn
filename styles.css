@@ -159,5 +159,9 @@ h2,
 
 h1.recipe-title {text-align: center;}
 
-body {padding: 0px;}
+body {padding: 0px !important;}
+}
+
+@media (max-width: 500px) {
+    .homepage-link {display: none;}
 }
